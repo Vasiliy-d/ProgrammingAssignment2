@@ -9,9 +9,10 @@ makeCacheMatrix <- function(x = matrix()) {
   }
   get <- function() {
     x
+  } 
+  setinv <- function(InvOfMatrix) {
+    inv <<- InvOfMatrix
   }
-    
-  setinv <- function(InvOfMatrix) inv <<- InvOfMatrix
   getinv <- function() {
     inv
   }  
